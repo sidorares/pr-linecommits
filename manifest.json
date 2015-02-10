@@ -1,0 +1,13 @@
+{
+  "name": "Pull request review files+commits",
+  "version": "1.0.0",
+  "description": "See commit list for each line on files page of PR",
+  "content_scripts": [
+    { "matches": ["https://github.com/*/*/pull/*"], "js": ["content.js"], "css": ["styles.css"] }
+  ],
+  "permissions": [
+    "tabs",
+    "https://github.com/*"
+  ],
+  "manifest_version": 2
+}
